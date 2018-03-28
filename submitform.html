@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>form validation </title>
+    <script type= "text/javascript">
+ function fun2()
+ {
+   var un=document.getElementById("username").value;
+   var pwd=document.getElementById("password").value;
+   if(un=="" || pwd=="")
+   {
+     alert("username and password are mandatory");
+     return false;
+   }else{
+     alert("login successful");
+   return true;
+ }
+ }
+  </script>
+  </head>
+  <body>
+    <form action="another.php" method="post" onsubmit= "return fun2()">
+      username: <input type="text" name="UserName" id="username"/>
+      <br/>
+      password: <input type="password" name="password" id="password"/>
+      <input type="submit" value="Login" />
+
+    </form>
+  </body>
+</html>

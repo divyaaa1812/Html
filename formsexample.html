@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <script type="text/javascript">
+    function fun1()
+    {
+      var a= document.getElementById("name");
+      var b= document.getElementById("d2");
+      b.innerHTML= "welcome," + a.value;
+    }
+  </script>
+</head>
+<body>
+    <p id="d2"> </p>
+  <form>
+      what is your name : <input type="text" id="name"/>
+    <br/>
+    <input type="button" value="Done" onclick="fun1()"/>
+  </form>
+</body>
+</html>
